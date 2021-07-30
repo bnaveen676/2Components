@@ -1,0 +1,89 @@
+@import "../css/owl.carousel.min.css";
+
+/* css variables */
+
+ :root {
+    --textFormat: upperCase;
+    --effect: all .8s linear;
+    --space: .1rem;
+    --weight: 600;
+    /* start default theme */
+    --primaryCol: #6d20c5;
+    --secondaryCol: rgb(19, 228, 19);
+    --colorOne: #fff;
+    --colorTwo: #000;
+    --colorThree: #999;
+    /* end default theme */
+}
+
+
+/* global css */
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    list-style: none!important;
+    text-decoration: none!important;
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+
+/* start preloader */
+
+.preloadContainer {
+    background: var(--colorTwo);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.preloader {
+    background-image: url(../img/preloader/preloader.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* end preloader */
+
+
+/* start our services */
+
+.serviceBox {
+    -webkit-box-shadow: 1px 1px 1px 1px #999;
+    box-shadow: 1px 1px 1px 1px #999;
+    padding: 1rem;
+    margin: 0;
+    height: 100%;
+}
+
+.serviceBox h3 {
+    color: var(--secondaryCol);
+    font-size: 1.3rem;
+    letter-spacing: var(--space);
+    text-transform: var(--textFormat);
+}
+
+.serviceBox p {
+    margin: 0;
+}
+
+
+/* end our services */
